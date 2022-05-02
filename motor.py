@@ -78,15 +78,15 @@ def setMotorLeft(power):
    GPIO.output(Motor1['input2'], GPIO.LOW)
 
    int(power)
-   if power < 0:
-      pwm = -int(100 * power)
+   if power > 0:
+      pwm = int(100 * power)
       if pwm > 100:
          pwm = 100
       GPIO.output(Motor1['input1'], GPIO.HIGH)
       EN1.ChangeDutyCycle(pwm)
       	  
-   elif power > 0:
-      pwm = int(100 * power)
+   elif power < 0:
+      pwm = -int(100 * power)
       if pwm > 100:
          pwm = 100
       GPIO.output(Motor1['input2'], GPIO.HIGH)
@@ -98,16 +98,24 @@ def setMotorRight(power):
    GPIO.output(Motor2['input2'], GPIO.LOW)
 
    int(power)
-   if power < 0:
-      pwm = -int(100 * power)
+   if power > 0:
+      pwm = int(100 * power)
       if pwm > 100:
          pwm = 100
       GPIO.output(Motor2['input1'], GPIO.HIGH)
       EN2.ChangeDutyCycle(pwm)
 
-   elif power > 0:
-      pwm = int(100 * power)
+   elif power < 0:
+      pwm = -int(100 * power)
       if pwm > 100:
          pwm = 100
       GPIO.output(Motor2['input2'], GPIO.HIGH)
       EN2.ChangeDutyCycle(pwm)
+    
+def exit():
+    GPIO.output(Motor1['input1'], GPIO.LOW)
+    GPIO.output(Motor1['input2'], GPIO.LOW)
+    GPIO.output(Motor2['input1'], GPIO.LOW)
+    GPIO.output(Motor2['input2'], GPIO.LOW)
+
+    GPIO.cleanup()
