@@ -35,8 +35,9 @@ def Run(a, b, c, d, x):
     if d==1:
         GPIO.output(Motor2['input2'], GPIO.HIGH)
 
-    EN2.ChangeDutyCycle(x)
     EN1.ChangeDutyCycle(x)
+    EN2.ChangeDutyCycle(x)
+    
 
 
 def Stop():
@@ -70,3 +71,43 @@ def Start():
 
 def StopSlowly():
     Stop_Slow(1,0,1,0)
+
+
+def setMotorLeft(power):
+   GPIO.output(Motor1['input1'], GPIO.LOW)
+   GPIO.output(Motor1['input2'], GPIO.LOW)
+
+   int(power)
+   if power < 0:
+      pwm = -int(100 * power)
+      if pwm > 100:
+         pwm = 100
+      GPIO.output(Motor1['input1'], GPIO.HIGH)
+      EN1.ChangeDutyCycle(pwm)
+      	  
+   elif power > 0:
+      pwm = int(100 * power)
+      if pwm > 100:
+         pwm = 100
+      GPIO.output(Motor1['input2'], GPIO.HIGH)
+      EN1.ChangeDutyCycle(pwm)
+    
+
+def setMotorRight(power):
+   GPIO.output(Motor2['input1'], GPIO.LOW)
+   GPIO.output(Motor2['input2'], GPIO.LOW)
+
+   int(power)
+   if power < 0:
+      pwm = -int(100 * power)
+      if pwm > 100:
+         pwm = 100
+      GPIO.output(Motor2['input1'], GPIO.HIGH)
+      EN2.ChangeDutyCycle(pwm)
+
+   elif power > 0:
+      pwm = int(100 * power)
+      if pwm > 100:
+         pwm = 100
+      GPIO.output(Motor2['input2'], GPIO.HIGH)
+      EN2.ChangeDutyCycle(pwm)
