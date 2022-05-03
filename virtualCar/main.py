@@ -7,16 +7,14 @@ from time import sleep
 
 # initialize things
 pygame.init()
-robot = serial.Serial(PORT, BUADRATE)  
 
 
 window = pygame.display.set_mode((700,400))  
 #window = pygame.display.set_mode((1155,399))   
 
 
-bg  = pygame.image.load("image/track1.png")
-#bg  = pygame.image.load("image/track2.png")
-car = pygame.image.load("car.png")
+bg  = pygame.image.load("image/road1.png")
+car = pygame.image.load("image/car.png")
 car = pygame.transform.scale(car, (40, 40)) 
 
 
