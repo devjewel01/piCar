@@ -5,7 +5,6 @@ import RPi.GPIO as pin
 from motor import Forward, Backward, Stop, Left, Right
 
 pin.setwarnings(False)
-pin.setmode(pin.BOARD)
 
 msg =''  #message variable
 
@@ -137,7 +136,6 @@ def update():
     imagel.imgtk = imgtk
     imagel.configure(image=imgtk)      
     msg_default() 
-    pins_default()
     
     imagel.after(15, update)
 
