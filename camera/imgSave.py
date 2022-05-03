@@ -5,6 +5,7 @@ camera = PiCamera()
 camera.rotation = 180
 
 
+
 camera.start_preview(alpha=200)
 camera.annotate_text = "Car Camera"
 for i in range(5):

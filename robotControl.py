@@ -6,11 +6,13 @@ from motor import Forward, Backward, Stop, Left, Right
 
 pin.setwarnings(False)
 
-msg =''  #message variable
+msg ='' 
 
 #width, height = 800, 500  #setting widht and height
 
 cap = cv2.VideoCapture(0)
+
+# image = cv2.rotate(src, cv2.ROTATE_180)
 
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 600)
 #cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 350)
@@ -34,8 +36,6 @@ color = (255, 255, 255)
 thickness = 2
 
 
-notif = ''
-
 #load background and button images
 for_img = 'image/f.gif'
 left_img = 'image/l.gif'
@@ -49,12 +49,10 @@ msg = ''
 
 def forward():
     """forward motion"""
-    print("Going Forward Baby.")
+    print("Going Forward.")
     global msg
     msg = 'Going Forward'
     Forward()
-    notlabel.config(text=" man keya liya hain")
-    notif = 'shamne jai vai'
     return
 
 def backward():
@@ -63,50 +61,40 @@ def backward():
     global msg
     msg = 'Going BACKWARD' 
     Backward()
-    notlabel.config(text=" pichhe dekh madar toast")
     return
 
 
 def left():
     """go left"""
-    print("Going left Baby.")
+    print("Going left.")
     global msg
     msg = 'Going LEFT'
     Left()
-    notlabel.config(text=" dili to bam haat voira")
-    notif = 'baaye jai vai'
     return
 
 def right():
     """go right"""
     global msg
     msg = 'Going RIGHT'
-    print("Going right man.")
+    print("Going right.")
     Right()
-    notlabel.config(text=" daye dekh")  
-    notif = 'dane jai vai'
     return
 
 def msg_default():
     global msg
     msg = ''
   
-def notification():
-    global notif   
-    return notif
 
 def check_faces(f):  
     faces = face_cascade.detectMultiScale(f, scaleFactor = 1.5, minNeighbors = 5)
     for(x, y, w, h) in faces:
         print('Face found\n')
-        roi_f = f[y: y+h, x: x+w] 
-        
+        roi_f = f[y: y+h, x: x+w]      
         color = (255, 0, 0)
         stroke = 2
         end_cord_x = x+w
         end_cord_y = y+h
-        cv2.rectangle(f, (x,y), (end_cord_x, end_cord_y), color, stroke)
-        
+        cv2.rectangle(f, (x,y), (end_cord_x, end_cord_y), color, stroke)      
         return f
     
 
