@@ -38,12 +38,11 @@ thickness = 2
 notif = ''
 
 #load background and button images
-backg_img = 'car.gif'
-for_img = 'f.gif'
-left_img = 'l.gif'
-right_img = 'r.gif'
-back_img = 'b.gif'
-quit_img = 'close.gif'
+for_img = 'image/f.gif'
+left_img = 'image/l.gif'
+right_img = 'image/r.gif'
+back_img = 'image/b.gif'
+quit_img = 'image/close.gif'
 
 msg = ''
 
