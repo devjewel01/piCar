@@ -3,8 +3,8 @@ import time
 GPIO.setwarnings(False)
 
 servoUltraSonicPin = 17
-servoCameraUpDownPin = 21
-servoCameraLeftRightPin = 20
+servoCameraUpDownPin = 20
+servoCameraLeftRightPin = 21
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(servoUltraSonicPin, GPIO.OUT)
@@ -20,30 +20,27 @@ servoCameraUpDown.start(6.5)
 servoCameraLeftRight.start(7.5) 
 time.sleep(0.1)
 
-
 def ultraSonicLeft():
-  servoUltraSonic.ChangeDutyCycle(11)
+  servoUltraSonic.ChangeDutyCycle(13)
 
 def ultraSonicRight():
   servoUltraSonic.ChangeDutyCycle(3)
 
 def ultraSonicPosition():
-  servoUltraSonic.ChangeDutyCycle(7)
+  servoUltraSonic.ChangeDutyCycle(8)
 
 def cameraUp():
-  servoCameraUpDown.ChangeDutyCycle(10)
+  servoCameraUpDown.ChangeDutyCycle(9)
 
 def cameraDown():
-  servoCameraUpDown.ChangeDutyCycle(4)
+  servoCameraUpDown.ChangeDutyCycle(5)
 
 def cameraLeft():
-  servoCameraLeftRight.ChangeDutyCycle(11)
+  servoCameraLeftRight.ChangeDutyCycle(13)
 
 def cameraRight():
-  servoCameraLeftRight.ChangeDutyCycle(4)
+  servoCameraLeftRight.ChangeDutyCycle(3)
 
 def cameraPosition():
   servoCameraLeftRight.ChangeDutyCycle(7.5)
   servoCameraUpDown.ChangeDutyCycle(6.5)
-
-
