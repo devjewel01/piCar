@@ -7,13 +7,13 @@ from servo import ultraSonicLeft, ultraSonicPosition, ultraSonicRight
 
 while True: 
     d = Distance()
-    print('Front Distance  is', d, 'm')   
-    if d < 0.2:
+    print('Front Distance  is', d, 'cm')   
+    if d < 10.0:
         Stop()
         Buzzer()  
         sleep(1)
         Backward(20)
-        sleep(1.5)
+        sleep(1)
         Stop()
         sleep(0.5)
 
