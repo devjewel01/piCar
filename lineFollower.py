@@ -3,7 +3,7 @@ from motor import Forward, Backward, Left, Right, Stop
 from ir import leftSensor, middleSensor, rightSensor
 
 def lineCheck():
-    if leftSensor() and rightSensor() and not middleSensor:
+    if leftSensor() and rightSensor():
         Forward(20)
     elif not leftSensor() and rightSensor():
         Left(30)
