@@ -11,14 +11,14 @@ while True:
     if d < 10.0:
         Stop()
         Buzzer()  
-        sleep(1)
-        Backward(20)
-        sleep(1)
-        Stop()
         sleep(0.5)
+        Backward(20)
+        sleep(0.8)
+        Stop()
+        sleep(0.3)
 
         ultraSonicLeft()
-        sleep(1)
+        sleep(0.5)
         L = Distance()
         print('Left Distance  is', L, 'm')
         sleep(0.5)
@@ -26,7 +26,7 @@ while True:
         sleep(0.5)
 
         ultraSonicRight()
-        sleep(1)
+        sleep(0.5)
         R = Distance()
         print('Right Distance  is', R, 'm')
         sleep(0.5)
@@ -34,14 +34,14 @@ while True:
         sleep(0.5)
 
         if L > R:
-            Left(50)
-            sleep(1)
+            Left(60)
+            sleep(0.3)
             Stop()
             sleep(0.5)
 
         else:
-            Right(50)
-            sleep(1)
+            Right(60)
+            sleep(0.3)
             Stop()
             sleep(0.5)
         
