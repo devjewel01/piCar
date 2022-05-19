@@ -2,7 +2,7 @@ import cv2
 from tkinter import *  
 from PIL import Image, ImageTk
 import RPi.GPIO as pin   
-from motor import Forward, Backward, Stop, Left, Right
+from motor import littleForward, littleBackward, littleLeft, littleRight
 
 pin.setwarnings(False)
 
@@ -52,7 +52,7 @@ def forward():
     print("Going Forward.")
     global msg
     msg = 'Going Forward'
-    Forward()
+    littleForward()
     return
 
 def backward():
@@ -60,7 +60,7 @@ def backward():
     print("Going back! Watch OUT!!") 
     global msg
     msg = 'Going BACKWARD' 
-    Backward()
+    littleBackward()
     return
 
 
@@ -69,7 +69,7 @@ def left():
     print("Going left.")
     global msg
     msg = 'Going LEFT'
-    Left()
+    littleLeft()
     return
 
 def right():
@@ -77,7 +77,7 @@ def right():
     global msg
     msg = 'Going RIGHT'
     print("Going right.")
-    Right()
+    littleRight()
     return
 
 def msg_default():

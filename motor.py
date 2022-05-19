@@ -66,6 +66,27 @@ def Left(x=50):
 def Right(x=50):
     Run(1,0,0,1,x)
 
+def littleForward(x=50):
+    Run(1,0,1,0,x)
+    time.sleep(0.5)
+    Stop()
+
+
+def littleBackward(x=50):
+    Run(0,1,0,1,x)
+    time.sleep(0.5)
+    Stop()
+
+def littleLeft(x=50):
+    Run(0,1,1,0,x)
+    time.sleep(0.3)
+    Stop()
+
+def littleRight(x=50):
+    Run(1,0,0,1,x)
+    time.sleep(0.3)
+    Stop()
+
 def Start():
     Start_Slow(1,0,1,0)
 
