@@ -44,3 +44,17 @@ def cameraRight():
 def cameraPosition():
   servoCameraLeftRight.ChangeDutyCycle(7.5)
   servoCameraUpDown.ChangeDutyCycle(6.5)
+
+def cameraUpDown(x):
+  if x>13:
+    x = 13
+  if x<0:
+    x = 0
+  servoCameraUpDown.ChangeDutyCycle(x)
+
+def cameraLeftRight(x):
+  if x>13:
+    x = 13
+  if x<0:
+    x = 0
+  servoCameraLeftRight.ChangeDutyCycle(x)
