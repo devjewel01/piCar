@@ -6,6 +6,8 @@
 ![Stargazers](https://img.shields.io/github/stars/devjewel01/Robot-Niko.svg?logo=github)
 ![Issues](https://img.shields.io/github/issues/devjewel01/Robot-Niko.svg?logo=github)
 
+<img align='right' src="Extras/gif/piCar-show.gif" width="40%">
+
 
  <a href="#piCar">Introduction</a></br>
  <a href="#Features">Features</a></br>
@@ -55,7 +57,6 @@
 10. **BMS**
 11. **Buzzer sound**
 12. **Motor driver**
-
 
 
 
