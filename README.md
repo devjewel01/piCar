@@ -2,9 +2,9 @@
 
 ![Python](https://img.shields.io/badge/python-v3.7+-blue.svg)
 ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
-![Forks](https://img.shields.io/github/forks/devjewel01/Robot-Niko.svg?logo=github)
-![Stargazers](https://img.shields.io/github/stars/devjewel01/Robot-Niko.svg?logo=github)
-![Issues](https://img.shields.io/github/issues/devjewel01/Robot-Niko.svg?logo=github)
+![Forks](https://img.shields.io/github/forks/devjewel01/piCar.svg?logo=github)
+![Stargazers](https://img.shields.io/github/stars/devjewel01/piCar.svg?logo=github)
+![Issues](https://img.shields.io/github/issues/devjewel01/piCar.svg?logo=github)
 
 <img align='right' src="Extras/gif/piCar-show.gif" width="40%">
 
