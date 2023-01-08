@@ -1,4 +1,4 @@
-# Robot Niko
+# Autonomous Pi Car
 
 ![Python](https://img.shields.io/badge/python-v3.7+-blue.svg)
 ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
@@ -16,92 +16,47 @@
  <a href="#Diagram">Robot Diagram</a></br>
 
 
-<p id="Robot-Niko"></p>
+<p id="piCar"></p>
 
 **Multifunctional Autonomous Car using python and Raspberry Pi 3**
 
 <h2 id="Features">Features</h2> 
 <hr>
 
-<img align='right' src="Extras/images/robot-front.jpg" width="350">
+<img align='right' src="Extras/images/car-lighting.jpg" width="40%">
 
-- [ ] **Robot Voice**
-  - [X] WakeWord
-  - [X] Listening
-  - [X] Speaking
-  - [X] Custome conversation
-  - [ ] Talking in **Bangali** Language 
-  
-<br>
-
-- [ ] **Robot System Design**
-  - [X] Robot System Installer Script
-  - [X] Robot Service Installer Script 
-  - [X] Running System in Startup
-  - [X] Gui for Robot interfece
-  - [ ] Setup Robot Operating System(ROS)
+  - [X] Line Following using array ir
+  - [X] Mobile Control
+  - [X] Laptop keyboard control
+  - [X] Avoid obstable mode
+  - [X] Following a path using camera
+  - [X] Human Face Following
+  - [X] control remotely with video 
+  - [X] Vitual road following
 
 <br>
 
-- [ ] **Robot Basic Functions**
-  - [X] Greetings
-  - [X] Searching Information
-  - [X] Capturing Images.
-  - [X] Predicts Time, Date, Weather Report etc. 
-  - [X] Say Jokes :grin:
-  - [X] Tells you latest news feeds.
-  - [X] Send an Email
-
-<img align='right' src="Extras/images/robot-side.png" width="350">
-
-<br>
-
-- [ ] **Robot Mobility**
-  - [X] Go forward, backward, left and right using Wheel 
-  - [x] Object Avoiding Mode 
-  - [X] Human Following Mode 
-  - [ ] Path planning
-  - [ ] Mapping a location 
-  
-<br>
-
-- [ ] **Robot Arm Movement**
-  - [X] Handsake 
-  - [ ] Salute 
-  - [X] Hand's Up 
-  - [X] Picking Object
-  - [ ] Other's arm move 
-
-<br>
-
-- [ ] **Advanced Machine Learning Features**
-  - [ ] Object Detection
-  - [X] Image Detection
-  - [X] Image Recognition 
-  - [ ] read Face Emotion
-  - [ ] Gender Detection 
-  - [X] Mask Detection 
-
-<br>
-
-<img src="Extras/images/gif1.gif" width="50%" >
 
 <br>
 
 <h2 id="Device">Component and Device</h2>
 
-1. **Raspberry Pi** microprocessor
-2. **Arduino** microcontroller
-3. **Servo Motors** 
-4. **DC Motors** 
-5. **Ultrasonic Sensors** 
-6. **LCD Display** 
-7. **Gas sensor** 
-8. **Smoke sensor**
-9.  **Fire sensor**
-10. **Gyroscope sensor**
-11. **Gps Tracker** 
-12. **LED matrix cube**
+<img align='right' src="Extras/images/front-left-side.jpg" width="40%" >
+
+1. **Raspberry Pi** 
+2. **Servo Motors** 
+3. **DC Motors** 
+4. **Ultrasonic Sensors** 
+5. **LCD Display** 
+6. **Gyroscope sensor**
+7. **Gps Tracker** 
+8. **5 array ir sensor**
+9. **step down bulb converter**
+10. **BMS**
+11. **Buzzer sound**
+12. **Motor driver**
+
+
 
 
 
@@ -125,16 +80,18 @@ Follow these algorithms to contribute to the voice assistant project.
 
 <h2 id="languageTools">Language and Tools</h2>
 
-| Python | C++ |  Bash | Terminal | Raspberry Pi |  Arduino |
-| ------ | ----| ------| -------- | ------------ | --------- |
-|<img align="left"  width="46px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" />|<img align="left"  width="46px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/cpp/cpp.png" />|<img align="left"  width="46px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bash/bash.png" />|<img align="left"  width="46px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" />|<img align="left"  width="46px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/raspberry-pi/raspberry-pi.png" />|<img align="left"  width="46px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/arduino/arduino.png" />|
+| Python |  Bash | Terminal | Raspberry Pi | 
+| ------ | ------| -------- | ------------ |
+|<img align="left"  width="46px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" />|<img align="left"  width="46px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bash/bash.png" />|<img align="left"  width="46px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" />|<img align="left"  width="46px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/raspberry-pi/raspberry-pi.png" />|
 
 <br />
 
 
-<h2 id="Diagram">Robot Diagram</h2>
+<h2 id="Diagram">Autonomous Pi Car</h2>
 
-<img width="60%"  src="Extras/images/robot-back.png">
+<img align='middle' width="80%"  src="Extras/images/car-on-table.jpg">
+<img align='left' width="40%"  src="Extras/images/car-up.jpg">
+<img align='left' width="40%"  src="Extras/images/car-on.jpg">
 
 
 
